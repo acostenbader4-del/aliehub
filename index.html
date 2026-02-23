@@ -16,6 +16,8 @@
     --blue: #60a5fa;
     --orange: #fb923c;
     --cyan: #22d3ee;
+    --red: #f87171;
+    --lime: #a3e635;
     --bg: #0f0a1e;
     --card-bg: #1a1035;
   }
@@ -176,6 +178,16 @@
   .card-6::before { background: radial-gradient(ellipse at top left, rgba(34,211,238,0.08), transparent 70%); }
   .card-6 .card-accent { background: linear-gradient(90deg, var(--cyan), #67e8f9); }
 
+  .card-7 { --accent: var(--red); }
+  .card-7:hover { border-color: var(--red); box-shadow: 0 0 40px rgba(248,113,113,0.25), 0 20px 50px rgba(0,0,0,0.4); }
+  .card-7::before { background: radial-gradient(ellipse at top left, rgba(248,113,113,0.08), transparent 70%); }
+  .card-7 .card-accent { background: linear-gradient(90deg, var(--red), #fca5a5); }
+
+  .card-8 { --accent: var(--lime); }
+  .card-8:hover { border-color: var(--lime); box-shadow: 0 0 40px rgba(163,230,53,0.2), 0 20px 50px rgba(0,0,0,0.4); }
+  .card-8::before { background: radial-gradient(ellipse at top left, rgba(163,230,53,0.07), transparent 70%); }
+  .card-8 .card-accent { background: linear-gradient(90deg, var(--lime), #d9f99d); }
+
   .card-icon {
     font-size: 2.8rem;
     margin-bottom: 16px;
@@ -236,6 +248,8 @@
   .card:nth-child(4) { animation-delay: 0.4s; }
   .card:nth-child(5) { animation-delay: 0.5s; }
   .card:nth-child(6) { animation-delay: 0.6s; }
+  .card:nth-child(7) { animation-delay: 0.7s; }
+  .card:nth-child(8) { animation-delay: 0.8s; }
   @keyframes fadeUp {
     to { opacity: 1; transform: translateY(0); }
   }
@@ -318,6 +332,22 @@
       <span class="card-icon">🎶</span>
       <div class="card-title">Finish That Lyric</div>
       <p class="card-desc">Can you complete the line? Fill in the missing lyrics and show off how well you know your songs!</p>
+      <span class="card-btn">Open <span class="card-btn-arrow">→</span></span>
+    </a>
+
+    <a href="https://acostenbader4-del.github.io/aliessmashorpass/" class="card card-7" target="_blank" rel="noopener">
+      <div class="card-accent"></div>
+      <span class="card-icon">🔥</span>
+      <div class="card-title">Smash or Pass</div>
+      <p class="card-desc">The ultimate hot-take game! Would you smash or pass? See how your choices stack up against the group.</p>
+      <span class="card-btn">Open <span class="card-btn-arrow">→</span></span>
+    </a>
+
+    <a href="https://acostenbader4-del.github.io/alieoutfitpalooza/" class="card card-8" target="_blank" rel="noopener">
+      <div class="card-accent"></div>
+      <span class="card-icon">👗</span>
+      <div class="card-title">Outfit Palooza</div>
+      <p class="card-desc">Style it out! Rate, mix, and match outfits in this fashion-forward frenzy with your friends.</p>
       <span class="card-btn">Open <span class="card-btn-arrow">→</span></span>
     </a>
 
