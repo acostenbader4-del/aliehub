@@ -18,6 +18,7 @@
     --cyan: #22d3ee;
     --red: #f87171;
     --lime: #a3e635;
+    --indigo: #818cf8;
     --bg: #0f0a1e;
     --card-bg: #1a1035;
   }
@@ -188,6 +189,11 @@
   .card-8::before { background: radial-gradient(ellipse at top left, rgba(163,230,53,0.07), transparent 70%); }
   .card-8 .card-accent { background: linear-gradient(90deg, var(--lime), #d9f99d); }
 
+  .card-9 { --accent: var(--indigo); }
+  .card-9:hover { border-color: var(--indigo); box-shadow: 0 0 40px rgba(129,140,248,0.25), 0 20px 50px rgba(0,0,0,0.4); }
+  .card-9::before { background: radial-gradient(ellipse at top left, rgba(129,140,248,0.08), transparent 70%); }
+  .card-9 .card-accent { background: linear-gradient(90deg, var(--indigo), #c7d2fe); }
+
   .card-icon {
     font-size: 2.8rem;
     margin-bottom: 16px;
@@ -250,6 +256,7 @@
   .card:nth-child(6) { animation-delay: 0.6s; }
   .card:nth-child(7) { animation-delay: 0.7s; }
   .card:nth-child(8) { animation-delay: 0.8s; }
+  .card:nth-child(9) { animation-delay: 0.9s; }
   @keyframes fadeUp {
     to { opacity: 1; transform: translateY(0); }
   }
@@ -348,6 +355,14 @@
       <span class="card-icon">👗</span>
       <div class="card-title">Outfit Palooza</div>
       <p class="card-desc">Style it out! Rate, mix, and match outfits in this fashion-forward frenzy with your friends.</p>
+      <span class="card-btn">Open <span class="card-btn-arrow">→</span></span>
+    </a>
+
+    <a href="https://acostenbader4-del.github.io/aliequoteunquote/" class="card card-9" target="_blank" rel="noopener">
+      <div class="card-accent"></div>
+      <span class="card-icon">🗣️</span>
+      <div class="card-title">Quote Unquote</div>
+      <p class="card-desc">Who said that?! Match the quote to the person and find out who's been paying attention.</p>
       <span class="card-btn">Open <span class="card-btn-arrow">→</span></span>
     </a>
 
